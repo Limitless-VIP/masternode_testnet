@@ -46,15 +46,15 @@ MASTERNODE_NAME='masternode'
 # Tip Address
 TIPS='TWeABR8rX5Fp4xe7bnrZ4r3KjE37xyegN1'
 # Dropbox Addnodes
-DROPBOX_ADDNODES=''
+DROPBOX_ADDNODES='9z0sxgdwt4i34lj'
 # If set to 1 then use addnodes from dropbox.
-USE_DROPBOX_ADDNODES=0
+USE_DROPBOX_ADDNODES=1
 # Dropbox Bootstrap
-DROPBOX_BOOTSTRAP=''
+DROPBOX_BOOTSTRAP='rm4iv5tsulu3wz4'
 # If set to 1 then use bootstrap from dropbox.
-USE_DROPBOX_BOOTSTRAP=0
+USE_DROPBOX_BOOTSTRAP=1
 # Dropbox blocks and chainstake folders.
-DROPBOX_BLOCKS_N_CHAINS=''
+DROPBOX_BLOCKS_N_CHAINS='3fbov51cxnn36mn'
 
 ASCII_ART () {
 echo -e "\\e[0m"

@@ -2450,7 +2450,7 @@ SENTINEL_GENERIC_SETUP () {
   echo "sudo su ${USRNAME} -c 'cd ${USR_HOME}/sentinel/ ; ${USR_HOME}/sentinel/venv/bin/python ${USR_HOME}/sentinel/bin/sentinel.py'"
   if [[ "$( sudo su "${USRNAME}" -c "cd ${USR_HOME}/sentinel/ ; ${USR_HOME}/sentinel/venv/bin/python ${USR_HOME}/sentinel/bin/sentinel.py" 2>&1 | grep -c 'Missing dependencies\|ImportError' )" -gt 0 ]]
   then
-    sudo su "${USRNAME}" -c "wget https://www.dropbox.com/s/zmsp1r3xwt3bb26/sentinel-venv.tar.gz?dl=1 -O \"${USR_HOME}/sentinel/sentinel-venv.tar.gz\" -q --show-progress --progress=bar:force"
+    sudo su "${USRNAME}" -c "wget https://www.dropbox.com/s/tycv92yuzxg09m2/sentinel-venv.tar.gz?dl=1 -O \"${USR_HOME}/sentinel/sentinel-venv.tar.gz\" -q --show-progress --progress=bar:force"
     sudo rm -rf "${USR_HOME:?}/sentinel/venv"
     sudo su "${USRNAME}" -c "tar -xf \"${USR_HOME}/sentinel/sentinel-venv.tar.gz\" -C \"${USR_HOME}/sentinel/\""
     echo "Chown."
