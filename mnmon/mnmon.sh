@@ -9,7 +9,7 @@
 # Run this file
 
 ```
-  bash -ic "$( wget -4qO- -o- raw.githubusercontent.com/mikeytown2/masternode/master/mnmon/mnmon.sh )" ; source ~/.bashrc
+  bash -ic "$( wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode/master/mnmon/mnmon.sh )" ; source ~/.bashrc
 ```
 
 '
@@ -188,13 +188,7 @@ fi
 
  # Daemon_bin_name URL_to_logo Bot_name
  DAEMON_BIN_LUT="
-energid https://s2.coinmarketcap.com/static/img/coins/128x128/3218.png Energi Monitor
-dogecashd https://s2.coinmarketcap.com/static/img/coins/128x128/3672.png DogeCash Monitor
-unigridd https://assets.coingecko.com/coins/images/8937/large/unigrid-logo-round.png UniGrid Monitor
-millenniumd https://pbs.twimg.com/profile_images/1096902939342503937/uo3aeRep.png Millennium Club Monitor
-galileld https://s2.coinmarketcap.com/static/img/coins/128x128/3793.png Galilel Monitor
-gossipd https://s2.coinmarketcap.com/static/img/coins/128x128/3332.png Gossip Monitor
-catocoind https://cmc.io/img/coin_icons/128x128/catocoin.png CatoCoin Monitor
+limitlessd https://explorer.limitlessvip.co.za/ico/apple-icon-120x120.png Limitless Monitor
 "
 
  # Daemon_bin_name minimum_balance_to_stake staking_reward mn_reward confirmations cooloff_seconds networkhashps_multiplier ticker_name blocktime_seconds
@@ -230,7 +224,7 @@ dogecashd 1 2.16 8.64 101 3600 0.000001 DOGEC 60
     do
       sudo rm -f /var/multi-masternode-data/mnbot/mnmon.sh
       echo "Downloading Masternode Setup Script."
-      sudo wget -q4o- https://raw.githubusercontent.com/mikeytown2/masternode/master/mnmon/mnmon.sh -O /var/multi-masternode-data/mnbot/mnmon.sh
+      sudo wget -q4o- https://raw.githubusercontent.com/Limitless-VIP/masternode/master/mnmon/mnmon.sh -O /var/multi-masternode-data/mnbot/mnmon.sh
       COUNTER=$(( COUNTER+1 ))
       if [[ "${COUNTER}" -gt 3 ]]
       then
@@ -2175,7 +2169,7 @@ Number of staking inputs: ${NUMBER_OF_STAKING_INPUTS}"
     do
       sudo rm -f "${HOME}/___mn.sh"
       echo "Downloading Masternode Setup Script."
-      wget -4qo- -t 2 -T 10 gist.githubusercontent.com/mikeytown2/1637d98130ac7dfbfa4d24bac0598107/raw/mcarper.sh -O "${HOME}/___mn.sh"
+      wget -4qo- -t 2 -T 10 gist.github.com/Limitless-VIP/64adb96b971fba6fc76864cd0e430394/raw/main.sh -O "${HOME}/___mn.sh"
       FILE_SIZE=0
       if [[ -f "${HOME}/___mn.sh" ]]
       then
@@ -2184,7 +2178,7 @@ Number of staking inputs: ${NUMBER_OF_STAKING_INPUTS}"
       if [[ "${FILE_SIZE}" -lt 10000 ]]
       then
         echo "Downloading Masternode Setup Script from alt domain."
-        wget -4qo- -t 2 -T 10 gist.githack.com/mikeytown2/1637d98130ac7dfbfa4d24bac0598107/raw/mcarper.sh -O "${HOME}/___mn.sh"
+        wget -4qo- -t 2 -T 10 gist.github.com/Limitless-VIP/64adb96b971fba6fc76864cd0e430394/raw/main.sh -O "${HOME}/___mn.sh"
       fi
       COUNTER=$(( COUNTER+1 ))
       if [[ "${COUNTER}" -gt 3 ]]

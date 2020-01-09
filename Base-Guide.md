@@ -17,7 +17,7 @@
  - At the bottom type/paste in masternode outputs 
  - Copy the txhash line 
 
-5. Get a VPS See https://github.com/mikeytown2/masternode/blob/master/VPS.md 
+5. Get a VPS See https://github.com/Limitless-VIP/masternode/blob/master/VPS.md 
 
 6. Copy masternode script and paste it into the putty console (right click is paste in putty). 
 
