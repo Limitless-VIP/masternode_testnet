@@ -28,8 +28,6 @@ DIRECTORY='.Limitless'
 CONF='limitless.conf'
 # Port.
 DEFAULT_PORT=8007
-# Explorer URL
-EXPLORER_URL='https://explorer.limitlessvip.co.za/'
 # Amount of Collateral needed
 COLLATERAL=4000000
 # Fallback Blockcount
