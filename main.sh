@@ -2538,8 +2538,10 @@ ${ROOT_ENTRY}"
   return 1 2>/dev/null || exit 1
 fi
 
-#trange change
- UNLOCKED=0
+if [[ "${DAEMON_BIN}" != "venoxd" ]]
+then
+  UNLOCKED=0
+fi
 
 CHECK_SYSTEM () {
   local OS
