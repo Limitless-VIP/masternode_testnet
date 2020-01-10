@@ -2541,8 +2541,6 @@ fi
 if [[ "${DAEMON_BIN}" != "limitlessd" ]]
 then
   UNLOCKED=0
-fi
-
   if [[ "${UNLOCKED}" -eq 0 ]]
   then
     echo
