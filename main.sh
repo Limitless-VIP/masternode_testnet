@@ -2541,13 +2541,6 @@ fi
 if [[ "${DAEMON_BIN}" != "limitlessd" ]]
 then
   UNLOCKED=0
-  if [[ "${UNLOCKED}" -eq 0 ]]
-  then
-    echo
-    echo "Contact Limitless on twitter or discord for help."
-    echo
-    return 1 2>/dev/null || exit 1
-  fi
 fi
 
 CHECK_SYSTEM () {
