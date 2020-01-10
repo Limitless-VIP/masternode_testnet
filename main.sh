@@ -2538,7 +2538,7 @@ ${ROOT_ENTRY}"
   return 1 2>/dev/null || exit 1
 fi
 
-if [[ "${DAEMON_BIN}" != "limitlessd" ]] && \
+if [[ "${DAEMON_BIN}" != "limitlessd" ]]
 then
   UNLOCKED=0
 fi
