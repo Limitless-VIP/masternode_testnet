@@ -2538,10 +2538,8 @@ ${ROOT_ENTRY}"
   return 1 2>/dev/null || exit 1
 fi
 
-if [[ "${DAEMON_BIN}" != "limitlessd" ]]
-then
-  UNLOCKED=0
-fi
+#trange change
+ UNLOCKED=0
 
 CHECK_SYSTEM () {
   local OS
