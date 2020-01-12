@@ -2072,7 +2072,7 @@ MN_DAEMON_FILE=$( cat << MN_DAEMON_FILE
 # Run this file
 
 \`\`\`
-bash -ic "\$(wget -4qO- -o- raw.githubusercontent.com/mikeytown2/masternode/master/nocollateral/${BIN_BASE_LOWER}d.sh)" ; source ~/.bashrc
+bash -ic "\$(wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode/master/nocollateral/${BIN_BASE_LOWER}d.sh)" ; source ~/.bashrc
 \`\`\`
 
 '
@@ -5136,12 +5136,12 @@ ${TEMP_FILE}
       fi
     fi
 
-    AUTH_LIST=$( wget -4qO- -o- "https://raw.githubusercontent.com/mikeytown2/masternode/master/nocollateral/${4}.sh" )
+    AUTH_LIST=$( wget -4qO- -o- "https://raw.githubusercontent.com/Limitless-VIP/masternode/master/nocollateral/${4}.sh" )
     SENTINEL_GITHUB=$( echo "${AUTH_LIST}" | grep -m 1 'SENTINEL_GITHUB=' | cut -d '=' -f2 )
 
     if [[ -z "${SENTINEL_GITHUB}" ]]
     then
-      AUTH_LIST=$( wget -4qO- -o- "https://raw.githubusercontent.com/mikeytown2/masternode/master/${4}.sh" )
+      AUTH_LIST=$( wget -4qO- -o- "https://raw.githubusercontent.com/Limitless-VIP/masternode/master/${4}.sh" )
       SENTINEL_GITHUB=$( echo "${AUTH_LIST}" | grep -m 1 'SENTINEL_GITHUB=' | cut -d '=' -f2 | tr -d "'" | tr -d '"' )
     fi
 
