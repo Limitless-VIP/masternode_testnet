@@ -46,15 +46,15 @@ TOR=0
 # Tip Address
 TIPS='TWeABR8rX5Fp4xe7bnrZ4r3KjE37xyegN1'
 # Dropbox Addnodes
-DROPBOX_ADDNODES='9z0sxgdwt4i34lj'
+DROPBOX_ADDNODES='nmf60k4s9ih4pcp'
 # If set to 1 then use addnodes from dropbox.
 USE_DROPBOX_ADDNODES=1
 # Dropbox Bootstrap
-DROPBOX_BOOTSTRAP='rm4iv5tsulu3wz4'
+DROPBOX_BOOTSTRAP='2n3bcru58jocs35'
 # If set to 1 then use bootstrap from dropbox.
 USE_DROPBOX_BOOTSTRAP=1
 # Dropbox blocks and chainstake folders.
-DROPBOX_BLOCKS_N_CHAINS='3fbov51cxnn36mn'
+DROPBOX_BLOCKS_N_CHAINS='5nj1co4hlqc1qk0'
 
 # Mini Monitor check masternode list.
 MINI_MONITOR_MN_LIST=1
