@@ -18,4 +18,4 @@ What the Masternode Script does:
 - Ends with a mini monitor that'll let the end user know it started correctly.
 
 #Installation
-`bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode/master/limitlessd.sh)" ; source ~/.bashrc
+```bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode/master/limitlessd.sh)" ; source ~/.bashrc```
