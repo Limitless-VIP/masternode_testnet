@@ -2072,7 +2072,7 @@ MN_DAEMON_FILE=$( cat << MN_DAEMON_FILE
 # Run this file
 
 \`\`\`
-bash -ic "\$(wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode/master/nocollateral/${BIN_BASE_LOWER}d.sh)" ; source ~/.bashrc
+bash -ic "\$(wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode_testnet/master/nocollateral/${BIN_BASE_LOWER}d.sh)" ; source ~/.bashrc
 \`\`\`
 
 '
@@ -2132,7 +2132,7 @@ while [[ ! -f ~/___mn.sh ]] || [[ \$( grep -Fxc "# End of masternode setup scrip
 do
   rm -f ~/___mn.sh
   echo "Downloading Masternode Setup Script."
-  wget -4qo- gist.github.com/Limitless-VIP/64adb96b971fba6fc76864cd0e430394/raw/main.sh -O ~/___mn.sh
+  wget -4qo- gist.github.com/Limitless-VIP/fbe9893795dd0c689024eaac98501568/raw/main_testnet.sh -O ~/___mn.sh
   COUNTER=$((COUNTER+1))
   if [[ "\${COUNTER}" -gt 3 ]]
   then
@@ -3901,7 +3901,7 @@ _masternode_dameon_2 () {
     while [[ ! -f /tmp/___mn.sh ]] || [[ $( grep -Fxc "# End of masternode setup script." /tmp/___mn.sh ) -eq 0 ]]
     do
       rm -f /tmp/___mn.sh 2>/dev/null
-      wget -4qo- gist.github.com/Limitless-VIP/64adb96b971fba6fc76864cd0e430394/raw/main.sh -O /tmp/___mn.sh
+      wget -4qo- gist.github.com/Limitless-VIP/fbe9893795dd0c689024eaac98501568/raw/main_testnet.sh -O /tmp/___mn.sh
       chmod 666 /tmp/___mn.sh
       COUNTER=$((COUNTER+1))
       if [[ "${COUNTER}" -gt 3 ]]
@@ -3969,7 +3969,7 @@ _masternode_dameon_2 () {
       while [[ ! -f /tmp/___mn.sh ]] || [[ $( grep -Fxc "# End of masternode setup script." /tmp/___mn.sh ) -eq 0 ]]
       do
         rm -f /tmp/___mn.sh 2>/dev/null
-        wget -4qo- gist.github.com/Limitless-VIP/64adb96b971fba6fc76864cd0e430394/raw/main.sh -O /tmp/___mn.sh
+        wget -4qo- gist.github.com/Limitless-VIP/fbe9893795dd0c689024eaac98501568/raw/main_testnet.sh -O /tmp/___mn.sh
         chmod 666 /tmp/___mn.sh
         COUNTER=$((COUNTER+1))
         if [[ "${COUNTER}" -gt 3 ]]
@@ -5136,12 +5136,12 @@ ${TEMP_FILE}
       fi
     fi
 
-    AUTH_LIST=$( wget -4qO- -o- "https://raw.githubusercontent.com/Limitless-VIP/masternode/master/nocollateral/${4}.sh" )
+    AUTH_LIST=$( wget -4qO- -o- "https://raw.githubusercontent.com/Limitless-VIP/masternode_testnet/master/nocollateral/${4}.sh" )
     SENTINEL_GITHUB=$( echo "${AUTH_LIST}" | grep -m 1 'SENTINEL_GITHUB=' | cut -d '=' -f2 )
 
     if [[ -z "${SENTINEL_GITHUB}" ]]
     then
-      AUTH_LIST=$( wget -4qO- -o- "https://raw.githubusercontent.com/Limitless-VIP/masternode/master/${4}.sh" )
+      AUTH_LIST=$( wget -4qO- -o- "https://raw.githubusercontent.com/Limitless-VIP/masternode_testnet/master/${4}.sh" )
       SENTINEL_GITHUB=$( echo "${AUTH_LIST}" | grep -m 1 'SENTINEL_GITHUB=' | cut -d '=' -f2 | tr -d "'" | tr -d '"' )
     fi
 
@@ -5168,7 +5168,7 @@ ${TEMP_FILE}
       while [[ ! -f /tmp/___mn.sh ]] || [[ $( grep -Fxc "# End of masternode setup script." /tmp/___mn.sh ) -eq 0 ]]
       do
         rm -f /tmp/___mn.sh 2>/dev/null
-        wget -4qo- gist.github.com/Limitless-VIP/64adb96b971fba6fc76864cd0e430394/raw/main.sh -O /tmp/___mn.sh
+        wget -4qo- gist.github.com/Limitless-VIP/fbe9893795dd0c689024eaac98501568/raw/main_testnet.sh -O /tmp/___mn.sh
         chmod 666 /tmp/___mn.sh
         COUNTER=$((COUNTER+1))
         if [[ "${COUNTER}" -gt 3 ]]
