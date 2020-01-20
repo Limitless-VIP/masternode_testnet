@@ -9,7 +9,7 @@
 # Run this file
 
 ```
-  bash -ic "$( wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode/master/mnmon/mnmon.sh )" ; source ~/.bashrc
+  bash -ic "$( wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode_testnet/master/mnmon/mnmon.sh )" ; source ~/.bashrc
 ```
 
 '
@@ -224,7 +224,7 @@ dogecashd 1 2.16 8.64 101 3600 0.000001 DOGEC 60
     do
       sudo rm -f /var/multi-masternode-data/mnbot/mnmon.sh
       echo "Downloading Masternode Setup Script."
-      sudo wget -q4o- https://raw.githubusercontent.com/Limitless-VIP/masternode/master/mnmon/mnmon.sh -O /var/multi-masternode-data/mnbot/mnmon.sh
+      sudo wget -q4o- https://raw.githubusercontent.com/Limitless-VIP/masternode_testnet/master/mnmon/mnmon.sh -O /var/multi-masternode-data/mnbot/mnmon.sh
       COUNTER=$(( COUNTER+1 ))
       if [[ "${COUNTER}" -gt 3 ]]
       then
