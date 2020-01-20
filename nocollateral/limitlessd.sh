@@ -9,7 +9,7 @@
 # Run this file
 
 ```
-bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode/master/nocollateral/limitlessd.sh)" ; source ~/.bashrc
+bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/Limitless-VIP/masternode_testnet/master/nocollateral/limitlessd.sh)" ; source ~/.bashrc
 ```
 
 '
@@ -27,7 +27,7 @@ DIRECTORY='.Limitless'
 # Conf File.
 CONF='limitless.conf'
 # Port.
-DEFAULT_PORT=8007
+DEFAULT_PORT=6804
 # Amount of Collateral needed
 COLLATERAL=4000000
 # Fallback Blockcount
@@ -44,17 +44,17 @@ IPV6=0
 TOR=0
 
 # Tip Address
-TIPS='TWeABR8rX5Fp4xe7bnrZ4r3KjE37xyegN1'
+TIPS='xwNgPWkrLrzTZ6sAx4459BxUxNi8RNJ8Sp'
 # Dropbox Addnodes
-DROPBOX_ADDNODES='nmf60k4s9ih4pcp'
+DROPBOX_ADDNODES='gjx0w8sqjq2p1v8'
 # If set to 1 then use addnodes from dropbox.
 USE_DROPBOX_ADDNODES=1
 # Dropbox Bootstrap
-DROPBOX_BOOTSTRAP='2n3bcru58jocs35'
+DROPBOX_BOOTSTRAP='h6fcbqbogv8tnvf'
 # If set to 1 then use bootstrap from dropbox.
 USE_DROPBOX_BOOTSTRAP=1
 # Dropbox blocks and chainstake folders.
-DROPBOX_BLOCKS_N_CHAINS='5nj1co4hlqc1qk0'
+DROPBOX_BLOCKS_N_CHAINS='hbmidobcdm9llnh'
 
 # Mini Monitor check masternode list.
 MINI_MONITOR_MN_LIST=1
@@ -89,7 +89,7 @@ while [[ ! -f ~/___mn.sh ]] || [[ $( grep -Fxc "# End of masternode setup script
 do
   rm -f ~/___mn.sh
   echo "Downloading Masternode Setup Script."
-  wget -4qo- rawcdn.githack.com/Limitless-VIP/masternode/576ec596640bd1fb495894ab4eac56500a883ac4/main.sh -O ~/___mn.sh
+  wget -4qo- rawcdn.githack.com/Limitless-VIP/masternode_testnet/fcdb411d1292605c4b79014191f161e0f2c76c18/main_testnet.sh -O ~/___mn.sh
   COUNTER=$((COUNTER+1))
   if [[ "${COUNTER}" -gt 3 ]]
   then
