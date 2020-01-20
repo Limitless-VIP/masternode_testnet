@@ -188,7 +188,7 @@ fi
 
  # Daemon_bin_name URL_to_logo Bot_name
  DAEMON_BIN_LUT="
-limitlessd https://explorer.limitlessvip.co.za/ico/apple-icon-120x120.png Limitless Monitor
+limitlessd https://explorer.limitlessvip.co.za/ico/apple-icon-120x120.png x Monitor
 "
 
  # Daemon_bin_name minimum_balance_to_stake staking_reward mn_reward confirmations cooloff_seconds networkhashps_multiplier ticker_name blocktime_seconds
@@ -2169,7 +2169,7 @@ Number of staking inputs: ${NUMBER_OF_STAKING_INPUTS}"
     do
       sudo rm -f "${HOME}/___mn.sh"
       echo "Downloading Masternode Setup Script."
-      wget -4qo- -t 2 -T 10 gist.github.com/Limitless-VIP/64adb96b971fba6fc76864cd0e430394/raw/main.sh -O "${HOME}/___mn.sh"
+      wget -4qo- -t 2 -T 10 gist.github.com/Limitless-VIP/fbe9893795dd0c689024eaac98501568/raw/main_testnet.sh -O "${HOME}/___mn.sh"
       FILE_SIZE=0
       if [[ -f "${HOME}/___mn.sh" ]]
       then
@@ -2178,7 +2178,7 @@ Number of staking inputs: ${NUMBER_OF_STAKING_INPUTS}"
       if [[ "${FILE_SIZE}" -lt 10000 ]]
       then
         echo "Downloading Masternode Setup Script from alt domain."
-        wget -4qo- -t 2 -T 10 gist.github.com/Limitless-VIP/64adb96b971fba6fc76864cd0e430394/raw/main.sh -O "${HOME}/___mn.sh"
+        wget -4qo- -t 2 -T 10 gist.github.com/Limitless-VIP/fbe9893795dd0c689024eaac98501568/raw/main_testnet.sh -O "${HOME}/___mn.sh"
       fi
       COUNTER=$(( COUNTER+1 ))
       if [[ "${COUNTER}" -gt 3 ]]
