@@ -9612,6 +9612,7 @@ daemon=1
 logtimestamps=1
 listen=1
 staking=1
+testnet=1
 externalip=${EXTERNALIP}
 bind=${BIND}
 ${EXTRA_CONFIG}
