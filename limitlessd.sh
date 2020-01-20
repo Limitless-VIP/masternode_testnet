@@ -27,7 +27,7 @@ DIRECTORY='.Limitless'
 # Conf File.
 CONF='limitless.conf'
 # Port.
-DEFAULT_PORT=8007
+DEFAULT_PORT=6804
 # Amount of Collateral needed
 COLLATERAL=4000000
 # Fallback Blockcount
